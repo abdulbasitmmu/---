@@ -1,0 +1,549 @@
+body{
+	/* background color */ background: #f9f9f9;
+	/* spacing from outside of div */ margin:0;
+	/* spacing from inside of div */ padding:0;
+
+}
+
+h1{
+	    /* selection of font style */ font-family: 'Helvetica Neue';
+    /* font size */ font-size: 75px;
+    /* spacing between word*/ letter-spacing: 2px;
+   /* word break */ word-wrap: break-word;
+}
+
+a{
+	 /* selection of font style */ font-family: 'Helvetica Neue';
+}
+
+h2,h3,h4,h5,h6{
+	/* selection of font style */ font-family: 'Helvetica Neue' ;
+	/* font weight means font style bold italic etc */ font-style: bold;
+	letter-spacing: 2px
+}
+
+.logo{
+	/* text color*/ color: #fff;
+	/* remove underline */ text-decoration: none;
+	/* font style of text */ /* selection of font style */ font-family: 'Helvetica Neue';
+	/* size of font */ /* font size */ font-size:25px;
+	/* spacing from top of div */ margin-top: 10px;
+	   /* set div to */ float: left;
+}
+
+#slider{
+	/* background color */ background: url(../img/bg.jpg) fixed center;
+	/* minimum height */ min-height: 600px;
+	/* text alignment */ text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#slider h1{
+	/* spacing from inside of div */ padding:0;
+	position: absolute;
+	top:20%;
+	left:0;
+	right:0;
+	/* font size */ font-size:100px;
+	color: #fff;
+
+}
+
+.underline{
+	width: 200px;
+	/* background color */ background: #000;
+	height: 15px;
+	/* spacing from top of div */ margin-top:-65px;
+	margin-bottom: 50px;
+}
+
+.black_layer{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	/* background color */ background: rgba(0,0,0,0.8);
+}
+
+.fa-arrow-up{
+	width: 30px;
+	height: 30px;
+	/* background color */ background: #000;
+	color: #fff;
+	/* spacing from inside of div */ padding:10px;
+	position: fixed;
+	bottom: 0;
+	right:20px;
+	/* font size */ font-size: 30px;
+	z-index: 999999;
+}
+
+.fa-bars{
+	    color: #fff;
+    /* font size */ font-size: 25px;
+    /* spacing from top of div */ margin-top: 18px;
+    cursor: pointer;
+}
+
+#expand-menu{
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	/* background color */ background: rgba(0,0,0,.9);
+}
+
+#expand-menu ul {
+	/* spacing from top of div */ margin-top:40px;
+}
+
+#expand-menu ul li{
+	list-style-type: none;
+	/* spacing from outside of div */ margin:0 auto;
+	line-height: 60px;
+}
+
+#nav{
+	/* background color */ background: #222;
+	overflow: auto;
+	height: 60px;
+}
+
+#right_exapnd{
+	float: right;
+}
+
+#close{
+	position: absolute;
+	right:40px;
+	top:20px;
+}
+
+.list-inline li{
+	display: inline-block;
+
+}
+
+.list-inline li img{
+	height: 50px;
+}
+
+
+#expand-menu ul li a{
+	/* font size */ font-size: 50px;
+	color: #fff;
+	text-decoration: none;
+}
+
+h2,h3,h4,h5,h6{
+	/* font size */ font-size:50px;
+	/* spacing from outside of div */ margin:0;
+}
+
+p,li{
+/* selection of font style */ font-family: 'Helvetica Neue';
+/* font size */ font-size:25px;
+    font-weight: normal;
+        letter-spacing: 2px;
+}
+
+ul li{
+	line-height: 50px;
+		list-style-type: square;
+
+}
+
+.container{
+	width:80%;
+	/* spacing from outside of div */ margin:0 auto;
+}
+
+.big {
+position: absolute;
+right:0px;
+/* font size */ font-size:75px;
+top:100px;
+opacity: .2;
+/* selection of font style */ font-family: 'Helvetica Neue';
+/* background color */ background: scroll;
+}
+
+#About{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:50px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+#Portfolio {
+	
+	/* spacing from inside of div */ padding:50px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card {
+	width: 20%;
+	float: left;
+	position: relative;
+}
+
+.card img{
+	width: 120%;
+	height: 250px;
+	box-shadow: 1px 1px 10px #ccc;
+	    margin-bottom: 100px;
+}
+
+.card .info{
+	border:5px solid #000;
+	/* spacing from inside of div */ padding:15px;
+	/* background color */ background: #fff;
+	/* text alignment */ text-align: center;
+	position: absolute;
+	top:100px;
+	right:0px;
+	    margin-bottom: 100px;
+}
+
+.info h3{
+	/* font weight means font style bold italic etc */ font-weight: bold;
+	/* text alignment */ text-align: left;
+	/* selection of font style */ font-family: 'Helvetica Neue';
+} 
+
+.details{
+	width: 70%;
+	float: right;
+	border:3px solid #ccc;
+	/* spacing from inside of div */ padding: 40px 0px 100px 100px;
+	    margin-bottom: 80px;
+}
+
+.details p{
+	margin-bottom: 30px;
+}
+
+.details a{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:10px 40px;
+	text-decoration: none;
+	color: #000;
+	border:1px solid #000;
+	position: relative;
+	transition: 0.2s;
+    font-size: 25px;
+
+}
+
+.details:hover a{
+	color: #fff;
+	/* background color */ background: #000;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#blog{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:50px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-blog{
+	width: 30%;
+	border:1px solid #ccc;
+	float: right;
+	/* spacing from outside of div */ margin: 1.5%;
+}
+
+.card-blog img{
+	width: 100%;
+}
+
+.card-blog p{
+	/* spacing from inside of div */ padding:0px 15px;
+}
+
+.card-blog h4{
+	/* font size */ font-size: 25px;
+	/* spacing from inside of div */ padding:0px 15px ;
+}
+
+.card-blog a{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:10px 40px;
+	text-decoration: none;
+	color: #000;
+	border:1px solid #000;
+	position: relative;
+	transition: 0.2s;
+	/* spacing from outside of div */ margin:15px;
+
+}
+
+.card-blog:hover a{
+	color: #fff;
+	/* background color */ background: #000;
+}
+
+#cv {
+	
+	/* spacing from inside of div */ padding:50px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:10px 40px;
+	text-decoration: none;
+	color: #000;
+	border:1px solid #000;
+	position: relative;
+	transition: 0.2s;
+	/* font size */ font-size:40px;
+	list-style-type: none;
+	line-height: 40px;
+}
+
+.btn:hover{
+	color: #fff;
+	/* background color */ background: #000;
+	box-shadow: 1px 1px 10px #ccc;
+}
+
+#cv_left{
+	width: 50%;
+	float: left;
+}
+
+#cv_left img{
+	width: 100%;
+	box-shadow: 1px 1px 10px #ccc;
+}
+
+#cv_right{
+	width: 50%;
+	float: left;
+} 
+
+#cv_right li{
+	list-style-type: none;
+	line-height: 100px;
+}
+
+#contact{
+		/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:50px 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+input[type="text"]{
+	width: 100%;
+    font-family: 'Helvetica Neue';
+    font-size: 25px;
+    font-weight: normal;
+	/* spacing from inside of div */ padding:15px;
+	border:1px solid #ccc;
+    letter-spacing: 2px;
+}
+
+input[type="email"]{
+	width: 100%;
+	/* spacing from inside of div */ padding:15px;
+	border:1px solid #ccc;
+    font-family: 'Helvetica Neue';
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+textarea{
+	width: 100%;
+	/* spacing from inside of div */ padding:15px;
+	border:1px solid #ccc;
+	height: 300px;
+    font-family: 'Helvetica Neue';
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+input[type="submit"]{
+	width: 200px;
+	/* spacing from inside of div */ padding:10px 25px;
+	border:1px solid #ccc;
+	float: right;
+		/* background color */ background: #fff;
+	text-decoration: none;
+	color: #000;
+	border:1px solid #000;
+
+	transition: 0.2s;
+	font-family: 'Helvetica Neue';
+    font-size: 25px;
+    font-style: bold;
+	/* font weight means font style bold italic etc */ font-weight: bold;
+	margin-right: -30px;
+	/* spacing between word*/ letter-spacing: 2px;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+	color: #fff;
+	/* background color */ background: #000;
+	box-shadow: 1px 1px 10px #ccc;
+	}
+
+input:focus{
+	outline:1px solid #000;
+}
+
+.clearfix{
+	clear: both;
+}
+
+iframe{
+	width: 100%;
+	height: 500px;
+	border:none;
+}
+
+@media (max-width:1340px){
+	.details{
+		width: 69%;
+		    /* spacing from inside of div */ padding: 40px 40px 100px 50px;
+	}
+}
+
+@media (max-width:1110px){
+	.details{
+		width: 65%;
+		    /* spacing from inside of div */ padding: 40px 40px 100px 50px;
+	}
+}
+
+@media (max-width:815px){
+	.details{
+		width: 85%;
+		    /* spacing from inside of div */ padding: 40px 40px 40px 50px;
+	}
+	.card img{
+		margin-bottom: 0px;
+	}
+	.card{
+		width: 83%;
+	}
+	.card .info{
+		right:50%;
+		left:0;
+	}
+	.card-blog{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	#cv_left{
+		width: 100%;
+	}
+	#cv_right{
+		width: 100%;
+	}
+}
+
+.blog-detail{
+	line-height: 30px;
+    margin-top: 50px
+}
+
+
+
+.blog-detail #first{
+	float: left;
+	/* spacing from outside of div */ margin: 10px;
+}
+
+.blog-detail #first-1{
+	float: left;
+	/* spacing from outside of div */ margin: 10px;
+	height: 400px;
+}
+
+
+.blog-detail #second{
+	float: right;
+	/* spacing from outside of div */ margin: 10px;
+}
+
+.blog-detail #second-1{
+	float: left;
+	/* spacing from outside of div */ margin: 10px;
+	height: 250px;
+}
+
+.blog-detail #blog_back{
+	/* background color */ background: #fff;
+	/* spacing from inside of div */ padding:10px 40px;
+	text-decoration: none;
+	color: #000;
+	border:1px solid #000;
+	position: relative;
+	transition: 0.2s;
+	list-style-type: none;
+	line-height: 40px;
+}
+
+
+.blog-detail #blog_back:hover{
+	color: #fff;
+	/* background color */ background: #000;
+	box-shadow: 1px 1px 10px #ccc;
+}
+
+.sdf a{
+	color: #000;
+}
+
+#assa{
+	animation-delay: 0.2s
+}
+
+#assa1{
+	animation-delay: 0.4s
+}
+
+#assa2{
+	animation-delay: 0.6s
+}
+
+#assa3{
+	animation-delay: 0.8s
+}
+
+#assa4{
+	animation-delay: 1s
+}
+
+#assa5{
+	animation-delay: 1.2s
+}
+
+.card-delay{
+	animation-delay: .2s;
+}
+
+.card-delay1{
+	animation-delay: .4s;
+}
+
+.card-delay2{
+	animation-delay: .6s;
+}

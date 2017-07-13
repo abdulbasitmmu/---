@@ -1,0 +1,484 @@
+//colors
+$color_alabaster_approx: #f9f9f9
+$white: #fff
+$black: #000
+$black_80: rgba(0,0,0,0.8)
+$black_90: rgba(0,0,0,.9)
+$color_log_cabin_approx: #222
+$color_celeste_approx: #ccc
+
+//fonts
+$font_0: Fjalla One
+$font_1: sans-serif
+$font_2: Open Sans Condensed
+$font_3: Kaushan Script
+$font_4: cursive
+$font_5: Roboto
+
+//urls
+$url_0: url(../img/bg.jpg)
+
+//@extend-elements
+//original selectors
+//h2, h3, h4, h5, h6
+.extend_1 
+	font-family: $font_2, $font_1
+	font-weight: 700
+	font-size: 40px
+	margin: 0
+
+
+
+body 
+	background: $color_alabaster_approx
+	margin: 0
+	padding: 0
+
+h1 
+	font-family: $font_0, $font_1
+	font-size: 100px
+	letter-spacing: 1px
+	word-wrap: break-word
+
+a 
+	font-family: $font_0, $font_1
+
+h2 
+	@extend %extend_1
+
+h3 
+	@extend %extend_1
+
+h4 
+	@extend %extend_1
+
+h5 
+	@extend %extend_1
+
+h6 
+	@extend %extend_1
+
+.logo 
+	color: $white
+	text-decoration: none
+	font-family: $font_3, $font_4
+	font-size: 28px
+	margin-top: 10px
+	float: left
+
+#slider 
+	background: $url_0 fixed center
+	min-height: 600px
+	text-align: center
+	position: relative
+	overflow: hidden
+	h1 
+		padding: 0
+		position: absolute
+		top: 20%
+		left: 0
+		right: 0
+		font-size: 100px
+		color: $white
+
+
+.underline 
+	width: 200px
+	background: $black
+	height: 15px
+	margin-top: -65px
+	margin-bottom: 50px
+
+.black_layer 
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: $black_80
+
+.fa-arrow-up 
+	width: 30px
+	height: 30px
+	background: $black
+	color: $white
+	padding: 10px
+	position: fixed
+	bottom: 0
+	right: 20px
+	font-size: 30px
+	z-index: 999999
+
+.fa-bars 
+	color: $white
+	font-size: 25px
+	margin-top: 18px
+	cursor: pointer
+
+#expand-menu 
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: $black_90
+	ul 
+		margin-top: 40px
+		li 
+			list-style-type: none
+			margin: 0 auto
+			line-height: 60px
+			a 
+				font-size: 40px
+				color: $white
+				text-decoration: none
+
+
+
+
+#nav 
+	background: $color_log_cabin_approx
+	overflow: auto
+	height: 60px
+
+#right_exapnd 
+	float: right
+
+#close 
+	position: absolute
+	right: 40px
+	top: 20px
+
+p 
+	font-family: $font_5, $font_1
+	font-size: 15px
+
+li 
+	font-family: $font_5, $font_1
+	font-size: 15px
+
+.container 
+	width: 80%
+	margin: 0 auto
+
+.big 
+	position: absolute
+	right: -50px
+	font-size: 200px
+	top: 100px
+	opacity: .2
+	font-family: $font_0, $font_1
+	background: scroll
+
+#About 
+	background: $white
+	padding: 50px 0
+	position: relative
+	overflow: hidden
+
+#Portfolio 
+	padding: 50px 0
+	position: relative
+	overflow: hidden
+
+.card 
+	width: 20%
+	float: left
+	position: relative
+	img 
+		width: 120%
+		height: 250px
+		//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 1px 1px 10px $color_celeste_approx
+		margin-bottom: 100px
+
+	.info 
+		border: 5px solid $black
+		padding: 15px
+		background: $white
+		text-align: center
+		position: absolute
+		top: 100px
+		right: 40px
+		margin-bottom: 100px
+
+
+.details 
+	width: 70%
+	float: right
+	border: 3px solid $color_celeste_approx
+	padding: 40px 0 100px 100px
+	margin-bottom: 80px
+	p 
+		margin-bottom: 30px
+
+	a 
+		background: $white
+		padding: 10px 40px
+		text-decoration: none
+		color: $black
+		border: 1px solid $black
+		position: relative
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.2s
+
+	&:hover a 
+		color: $white
+		background: $black
+
+
+.clearfix 
+	clear: both
+
+#blog 
+	background: $white
+	padding: 50px 0
+	position: relative
+	overflow: hidden
+
+.card-blog 
+	width: 30%
+	border: 1px solid $color_celeste_approx
+	float: left
+	margin: 1.5%
+	img 
+		width: 100%
+
+	p 
+		padding: 0 15px
+
+	h4 
+		font-size: 25px
+		padding: 0 15px
+
+	a 
+		background: $white
+		padding: 10px 40px
+		text-decoration: none
+		color: $black
+		border: 1px solid $black
+		position: relative
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.2s
+		margin: 15px
+
+	&:hover a 
+		color: $white
+		background: $black
+
+
+#cv 
+	padding: 50px 0
+	position: relative
+	overflow: hidden
+
+.btn 
+	background: $white
+	padding: 10px 40px
+	text-decoration: none
+	color: $black
+	border: 1px solid $black
+	position: relative
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 0.2s
+	font-size: 40px
+	list-style-type: none
+	line-height: 40px
+	&:hover 
+		color: $white
+		background: $black
+		//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 1px 1px 10px $color_celeste_approx
+
+
+#cv_left 
+	width: 50%
+	float: left
+	img 
+		width: 100%
+		//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 1px 1px 10px $color_celeste_approx
+
+
+#cv_right 
+	width: 50%
+	float: left
+	li 
+		list-style-type: none
+		line-height: 100px
+
+
+#contact 
+	background: $white
+	padding: 50px 0
+	position: relative
+	overflow: hidden
+
+input[type="text"] 
+	width: 100%
+	padding: 15px
+	border: 1px solid $color_celeste_approx
+
+input[type="email"] 
+	width: 100%
+	padding: 15px
+	border: 1px solid $color_celeste_approx
+
+textarea 
+	width: 100%
+	padding: 15px
+	border: 1px solid $color_celeste_approx
+	height: 300px
+
+input[type="submit"] 
+	width: 200px
+	padding: 10px 25px
+	border: 1px solid $color_celeste_approx
+	float: right
+	background: $white
+	text-decoration: none
+	color: $black
+	border: 1px solid $black
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 0.2s
+	font-weight: bold
+	margin-right: -30px
+	letter-spacing: 1px
+	&:hover 
+		cursor: pointer
+		color: $white
+		background: $black
+		//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 1px 1px 10px $color_celeste_approx
+
+
+iframe 
+	width: 100%
+	height: 500px
+	border: none
+
+@media(max-width:1340px) 
+	.details 
+		width: 69%
+		padding: 40px 40px 100px 50px
+
+
+@media(max-width:1110px) 
+	.details 
+		width: 65%
+		padding: 40px 40px 100px 50px
+
+
+@media(max-width:815px) 
+	.details 
+		width: 85%
+		padding: 40px 40px 40px 50px
+
+	.card 
+		width: 83%
+		img 
+			margin-bottom: 0
+
+		.info 
+			right: 50%
+			left: 0
+
+
+	.card-blog 
+		width: 100%
+		margin-bottom: 40px
+
+	#cv_left 
+		width: 100%
+
+	#cv_right 
+		width: 100%
+
+
+.blog-detail 
+	line-height: 30px
+	#first 
+		float: left
+		margin: 10px
+
+	#first-1 
+		float: left
+		margin: 10px
+		height: 400px
+
+	#second 
+		float: right
+		margin: 10px
+
+	#second-1 
+		float: right
+		margin: 10px
+		height: 250px
+
+	#blog_back 
+		background: $white
+		padding: 10px 40px
+		text-decoration: none
+		color: $black
+		border: 1px solid $black
+		position: relative
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.2s
+		list-style-type: none
+		line-height: 40px
+		&:hover 
+			color: $white
+			background: $black
+			//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 1px 1px 10px $color_celeste_approx
+
+
+
+#assa 
+	animation-delay: 0.1s
+
+#assa1 
+	animation-delay: 0.3s
+
+#assa2 
+	animation-delay: 0.5s
+
+#assa3 
+	animation-delay: 0.7s
+
+#assa4 
+	animation-delay: 1s
+
+#assa5 
+	animation-delay: 1.2s
+
+.card-delay 
+	animation-delay: .2s
+
+.card-delay1 
+	animation-delay: .4s
+
+.card-delay2 
+	animation-delay: .6s
+
+.list-inline li 
+	display: inline-block
+	img 
+		height: 50px
+
+
+ul li 
+	line-height: 40px
+	list-style-type: square
+
+.info h3 
+	font-weight: bold
+	text-align: center
+	font-family: $font_0, $font_1
+
+input:focus 
+	outline: 1px solid $black
+
+.sdf a 
+	color: $black

@@ -1,0 +1,195 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonts">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+
+
+<div id="expand-menu" style="display: none">
+	<center>
+	<ul>
+		<li class="wow fadeInUp clickon"><a href="index.html#slider">Home</a></li>
+		<li class="wow fadeInUp clickon"><a href="index.html#About">About</a></li>
+		<li class="wow fadeInUp clickon"><a href="index.html#Portfolio">Portfolio</a></li>
+		<li class="wow fadeInUp clickon"><a href="index.html#blog">Blog</a></li>
+		<li class="wow fadeInUp clickon"><a href="index.html#cv">CV</a></li>
+		<li class="wow fadeInUp clickon"><a href="index.html#contact">Contact</a></li>
+		<li id="close"><a href=""><i class="fa fa-close"></i></a></li>
+	</ul>
+
+	<ul class="list-inline">
+		<li><a href="https://www.facebook.com/abdulbasit786"><img src="img/facebook.png"></a></li>
+		<li><a href="https://uk.linkedin.com/in/abdul-basit-b39240132"><img src="img/linkedin.png"></a></li>
+	</ul>
+	</center>
+</div>
+
+<div id="nav">
+	<div class="container">
+		<div id="left_nav">
+		<a href="" class="logo">Abdul Basit</a>
+		</div>
+
+		<div id="right_exapnd">
+			<i class="fa fa-bars" id="expand"></i>
+		</div>
+	</div>
+</div>
+
+    
+<div class="blog-detail">
+
+	<div class="container wow fadeInUp">
+
+		<h1>Typography</h1>
+        <br>
+        <br>
+        <br>
+        <h4>Rules of Implementation</h4>
+		<br>
+        
+        <p><strong>Justify Left : </strong>
+			Set the type from left to right. People generally read from top to bottom and left to right. By justifying left, the eye is able to find the edge
+            and read copy more easily. Indentation of first line of a paragraph should be avoided.
+            Justify left is easier to read.
+		</p>
+        <br>
+<img src="img/blog/2.png" class="responsive" id="first">
+        <hr>
+	<!--	<img src="img/blog/blog1-1.png" class="responsive" id="first">-->
+
+		<p><strong>Use One Font : </strong> Using two fonts succesfully with a layout requires an understanding of the chosen fonts in order to be confident that they are complimentary. In general, avoid using two fonts of same classification. The font used here is Helvetica Neue.</p>
+
+
+		<p><strong>Skip a Weight : </strong>Transition from light to bold or medium to extra bold when changing font weights a great design. It imparts contrasts. Using bold for the headline and light for the body provides greater contrast</p>
+
+<br>
+<img src="img/blog/3.png" class="responsive" id="first">
+<hr>
+
+
+		<p><strong>Double Point Size : </strong>When changing font sizes, a good rule of thumb is to double or half the point size.</p>
+
+<br>
+<img src="img/blog/4.png" class="responsive" id="first">
+<hr>
+
+
+		<p><strong>Align to one Axis : </strong>Oen should type along the primary axis. Either stick to left or stick to right. In case of horizontal axis. alignment must be on the strongest horizontal element. Somtimes this is the best cap height while the others are baseline</p>
+        <br>
+        <img src="img/blog/5.png" class="responsive" id="first">
+        <hr>
+<p><strong>Group by Using Rules : </strong>Make an association of similar objects in a orderly manner. This helps to show the relevant information based on group realated blocks of object.</p>
+        <br>
+        <img src="img/blog/6.png" class="responsive" id="first">
+        <hr>
+
+<p><strong>Avoid the corners : </strong>Never place the elements along the edge or corners of a page since it cuts the elements off. Having negative space is good since it provides oxygen to design to let it breathe</p>
+
+
+<br>
+<img src="img/blog/7.png" class="responsive" id="first">
+<hr>
+<p><strong>Mind the Gap : </strong> Spacing is the main aspect in Typography. The use of forced type which either way is justified or having a single word in the paragraph. This all makes the presentation a widow.
+    
+Using a single space after punctuation and paying details to the shape and removing undesired shapes/angles. 
+
+Shaping matters. The closer the things are, the more the reader makes a connection.
+    
+    One should not allow a new page or column as it leaves the page as an orphan.
+</p>
+<br>
+<img src="img/blog/8.png" class="responsive" id="first">
+<hr>
+        <br>
+<hr>
+<br>	
+<h4>References</h4>	
+<br>
+<ul class="sdf">
+    <br>
+	<li><a href="https://medium.com/wd-tips-tricks/a-typography-cheat-sheet-2580df91c20c">Medium Web Design Typography, https://medium.com/wd-tips-tricks</a></li>
+	<li><a href="https://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/">https://www.webdesignerdepot.com/author/WebdesignerDepot-Staff/ [Accessed: 11 July 2017]</a>
+	
+</ul>
+
+
+<a href="index.html#blog" id="blog_back">Back To Blog</a>
+
+	</div>
+
+</div>
+
+
+
+
+
+			<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+			<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript">
+	$("#expand").click(function(){
+	$("#expand-menu").show();
+});
+
+$("#close").click(function(){
+	$("#expand-menu").hide();
+});
+
+$(".clickon").click(function(){
+	$("#expand-menu").hide();
+});
+
+</script>
+
+<script>
+	
+// create the back to top button
+$('body').prepend('<a href="body" class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>');
+
+// change the value with how many pixels scrolled down the button will appear
+var amountScrolled = 200;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.top').fadeIn('slow');
+	} else {
+		$('a.top').fadeOut('slow');
+	}
+});
+
+$('a.top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+
+<script type="text/javascript">
+	new WOW().init();
+</script>
+
+
+</body>
+</html>
